@@ -17,13 +17,74 @@
         <h1 class="display-4">PROJECT DOG NAMES</h1>
         <p class="lead">Finding the right dog should be a heck of a lot easier - that's why we're here.</p>
         <hr class="my-4">
+    </div>
+
+    <form>
+        <div class="col-md-3 mb-3">
+            <label for="validationCustom05">Zip</label>
+            <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
+            <div class="invalid-feedback">
+                Please provide a valid zip.
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Breed</label>
+                <input type="text" class="form-control" id="breed" placeholder="Great Dane">
+            </div>
+            <div class="form-group">
+                    <label for="exampleFormControlSelect1">Example select</label>
+                    <select class="form-control" id="sizeselection">
+                      <option>Toy</option>
+                      <option>Small</option>
+                      <option>Medium</option>
+                      <option>Large</option>
+                      <option>Giant</option>
+                    </select>
+                  </div>
+                  <button type="button" class="btn btn-success">Find my pup!</button>
+
+    </form>
+
+    <div class= "wikisummary">
+<!-- dpending on API we can put summary or a link or...whatever-->
 
     </div>
+
+
+    <table class="table table-bordered" id="doginformation">
+            <thead>
+              <tr>
+                <th scope="col">Breed</th>
+                <th scope="col">Location</th>
+                <th scope="col">Cost</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+
 
     <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- <script type="text/javascript" src="app.js"></script> -->
+    <script type="text/javascript" src="app.js"></script>
 
 
 </body>
