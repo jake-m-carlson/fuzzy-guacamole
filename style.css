@@ -1,3 +1,70 @@
+body    {
+    background-image: url("food-image.jpeg");
+    height: 100%; 
+    background-position: -300px 262px;
+    background-repeat: no-repeat;
+    background-size: stretch;
+}
+
+body, html {
+    height: 100%;
+  }
+
 .jumbotron {
     text-align: center;
 }
+
+#map-container {
+    height: 200px;
+    width: 300px;
+    overflow: scroll;
+    border: solid black 3px;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 50px;
+
+}
+
+#map {
+    background-color: lightblue;
+    width: 300px;
+    height: 300px;
+    padding-right: 30px;
+    margin-left: 0px;
+}
+
+
+#table {
+    width: 700px;
+    float: right;
+    padding-right: 50px;
+    padding-top: 30px;
+}
+
+#food    {
+
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+#zip    {
+
+    height: 150px;
+    width: 300px;
+
+} 
+
+th  {
+    font-weight: bold;
+    text-align: center;
+}
+
+#form-1 {
+    padding-left: 30px;
+}
+
+#form-2 {
+    padding-left: 140px;
+}
+
+

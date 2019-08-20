@@ -3,88 +3,140 @@
 
 <head>
 
-    <meta charset="utf-8">
-    <title>Project</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <title>Project</title>
+  <link rel="stylesheet"
+    href="reset.css">
+  <link rel="stylesheet"
+    href="style.css">
+  <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+    crossorigin="anonymous">
 
 </head>
 
 <body>
-    <div class="jumbotron">
-        <h1 class="display-4">PROJECT DOG NAMES</h1>
-        <p class="lead">Finding the right dog should be a heck of a lot easier - that's why we're here.</p>
-        <hr class="my-4">
+  <div class="jumbotron">
+    <h1 class="display-4">
+      PROJECT NUTRITION</h1>
+    <p class="lead">Find
+      information about what
+      you are ingesting.
+    </p>
+    <hr class="my-4">
+  </div>
+
+
+  <div id="table">
+    <table
+      class="table table-bordered"
+      id="doginformation">
+      <thead>
+        <tr>
+          <th scope="col">Food
+          </th>
+          <th scope="col">
+            Location</th>
+          <th scope="col">Cost
+          </th>
+          <th scope="col">
+            Handle
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Larry
+            the Bird</td>
+          <td>Tweet</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div id="form-1">
+  <form id="food">
+    <div class="container">
+    <div class="row">
+    <div
+      class="col-md-3 mb-3">
+      <label
+        for="validationCustom05">Food
+        Type</label>
+      <input type="text"
+        class="form-control"
+        id="validationCustom05"
+        placeholder="Food"
+        required>
+
+      <br>
+      <button type="button"
+        class="btn btn-success">Submit</button>
+      </div>
     </div>
 
-    <form>
-        <div class="col-md-3 mb-3">
-            <label for="validationCustom05">Zip</label>
-            <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
-            <div class="invalid-feedback">
-                Please provide a valid zip.
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlInput1">Breed</label>
-                <input type="text" class="form-control" id="breed" placeholder="Great Dane">
-            </div>
-            <div class="form-group">
-                    <label for="exampleFormControlSelect1">Example select</label>
-                    <select class="form-control" id="sizeselection">
-                      <option>Toy</option>
-                      <option>Small</option>
-                      <option>Medium</option>
-                      <option>Large</option>
-                      <option>Giant</option>
-                    </select>
-                  </div>
-                  <button type="button" class="btn btn-success">Find my pup!</button>
+  </form>
+</div>
+<div id="form-2">
+  <form id="zip">
+      <div class="container">
+          <div class="row">
+    <div
+      class="col-md-3 mb-3">
+      <label
+        for="validationCustom05">Zip Code</label>
+      <input type="text"
+        class="form-control"
+        id="validationCustom06"
+        placeholder="Please provide a valid zip code"
+        required>
 
-    </form>
+      <br>
+      <button type="button"
+        class="btn btn-success">Submit</button>
+      </div>
+      </div>
+  </form>
+</div>
 
-    <div class= "wikisummary">
-<!-- dpending on API we can put summary or a link or...whatever-->
 
+  <div class=container
+    id="map-container">
+    <div class=row>
+      <div class="col-med-12"
+        id="map">
+
+      </div>
     </div>
+  </div>
+  <br>
+  <br>
+  <br>
 
-
-    <table class="table table-bordered" id="doginformation">
-            <thead>
-              <tr>
-                <th scope="col">Breed</th>
-                <th scope="col">Location</th>
-                <th scope="col">Cost</th>
-                <th scope="col">Handle</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td colspan="2">Larry the Bird</td>
-                <td>@twitter</td>
-              </tr>
-            </tbody>
-          </table>
-
-
-    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="app.js"></script>
+  <script
+    src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+  <script
+    src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script
+    type="text/javascript"
+    src="app.js"></script>
 
 
 </body>
