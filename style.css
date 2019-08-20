@@ -1,7 +1,7 @@
 body    {
     background-image: url("food-image.jpeg");
     height: 100%; 
-    background-position: -300px 262px;
+    background-position: -300px 180px;
     background-repeat: no-repeat;
     background-size: stretch;
 }
@@ -9,6 +9,15 @@ body    {
 body, html {
     height: 100%;
   }
+
+#jumbotron  {
+    height: 183px;
+    border: 2px solid white;
+    background-color: rgb(187, 149, 103);
+    padding-top: 30px;
+    width: 1600px;
+    margin-right: 0;
+}
 
 .jumbotron {
     text-align: center;
@@ -35,16 +44,24 @@ body, html {
 
 
 #table {
-    width: 700px;
+    
     float: right;
-    padding-right: 50px;
-    padding-top: 30px;
+    margin-right: 500px;
+    margin-top: 90px;
+    padding-bottom: 0px;
+    background-color: white;
+    border: 2px solid black;
+    width: 300px;
+}
+
+th  {
+    width: 120px;
 }
 
 #food    {
 
     padding-left: 30px;
-    padding-top: 30px;
+    padding-top: 70px;
 }
 
 #zip    {
@@ -65,6 +82,25 @@ th  {
 
 #form-2 {
     padding-left: 140px;
+}
+
+.form-text  {
+    color: lightgoldenrodyellow;
+}
+
+#footer  {
+    background-color: rgb(187, 149, 103);;
+    width: 1600px;
+    margin-left: -30px;
+    border: 2px solid white;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 8px;
+}
+
+#jumbo-1    {
+
+
 }
 
 
