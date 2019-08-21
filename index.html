@@ -17,7 +17,8 @@
 </head>
 
 <body>
-  <div class="jumbotron">
+  <div class="jumbotron jumbotron-fluid" id="jumbotron">
+      <div class="container" id="jumbo-1">
     <h1 class="display-4">
       PROJECT NUTRITION</h1>
     <p class="lead">Find
@@ -25,6 +26,7 @@
       you are ingesting.
     </p>
     <hr class="my-4">
+  </div>
   </div>
 
 
@@ -34,36 +36,25 @@
       id="doginformation">
       <thead>
         <tr>
-          <th scope="col">Food
+          <th scope="col">Calories
           </th>
-          <th scope="col">
-            Location</th>
-          <th scope="col">Cost
-          </th>
-          <th scope="col">
-            Handle
-          </th>
+          <td></td>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>1</td>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
+          <th scope="col">Fat (g)
+          </th>
+          <td></td>
         </tr>
         <tr>
-          <td>2</td>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
+          <th scope="col">Protein (g)
+          </th>
+          <td></td>
         </tr>
         <tr>
-          <td>3</td>
-          <td>Larry
-            the Bird</td>
-          <td>Tweet</td>
-          <td>@twitter</td>
+          <th scope="col">Sodium (mg)</th>
+          <td></td>
         </tr>
       </tbody>
     </table>
@@ -75,7 +66,7 @@
     <div
       class="col-md-3 mb-3">
       <label
-        for="validationCustom05">Food
+        for="validationCustom05" class="form-text">Food
         Type</label>
       <input type="text"
         class="form-control"
@@ -98,7 +89,7 @@
     <div
       class="col-md-3 mb-3">
       <label
-        for="validationCustom05">Zip Code</label>
+        for="validationCustom05" class="form-text">Zip Code</label>
       <input type="text"
         class="form-control"
         id="validationCustom06"
@@ -123,9 +114,25 @@
       </div>
     </div>
   </div>
+</div>
   <br>
   <br>
   <br>
+  <div class=container
+    id="footer">
+    <div class=row>
+      <div class="col-med-12"
+        id="foot">
+        <footer>
+            <p>Posted by: </p>
+            <p>Contact information: <a href="mailto:someone@example.com">
+            someone@example.com</a>.</p>
+          </footer>
+        </div>
+        </div>
+        </div>
+        
+  
 
   <script
     src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
