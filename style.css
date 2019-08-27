@@ -1,14 +1,12 @@
-body    {
-    background-image: url("food-image.jpeg");
-    background-position: -300px 180px;
-    background-repeat: no-repeat;
-    background-size: stretch;
 
-}
-
-  #main-container  {
+#main-container  {
       padding: 0px;
       max-width: 100%;
+      background-image: url("food-image.jpeg");
+      background-position: -300px 180px;
+      background-repeat: no-repeat;
+      background-size: stretch;
+      overflow: hidden;
   }
 
 #jumbotron  {
@@ -16,10 +14,10 @@ body    {
     border: 2px solid white;
     background-color: rgb(187, 149, 103);
     padding-top: 30px;
-    width: 1650px;
     margin-right: 0;
     margin-left: 0;
     color: white;
+    border-radius: 0px;
 }
 
 .jumbotron {
@@ -33,7 +31,6 @@ body    {
     border: solid black 3px;
     margin-top: 50px;
     margin-left: 70px;
-    margin-right: 
 
 }
 
@@ -87,9 +84,7 @@ th  {
 }
 
 #footer  {
-    background-color: rgb(187, 149, 103);;
-    width: 1650px;
-    margin-left: px;
+    background-color: rgb(187, 149, 103);
     border: 2px solid white;
     text-align: center;
     font-weight: bold;
