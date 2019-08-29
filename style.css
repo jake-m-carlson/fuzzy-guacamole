@@ -1,22 +1,23 @@
-body    {
-    background-image: url("food-image.jpeg");
-    height: 100%; 
-    background-position: -300px 180px;
-    background-repeat: no-repeat;
-    background-size: stretch;
-}
 
-body, html {
-    height: 100%;
+#main-container  {
+      padding: 0px;
+      max-width: 100%;
+      background-image: url("food-image.jpeg");
+      background-position: -300px 180px;
+      background-repeat: no-repeat;
+      background-size: stretch;
+      overflow: hidden;
   }
 
 #jumbotron  {
-    height: 183px;
+    height: 182px;
     border: 2px solid white;
     background-color: rgb(187, 149, 103);
     padding-top: 30px;
-    width: 1600px;
     margin-right: 0;
+    margin-left: 0;
+    color: white;
+    border-radius: 0px;
 }
 
 .jumbotron {
@@ -24,19 +25,18 @@ body, html {
 }
 
 #map-container {
-    height: 200px;
-    width: 300px;
+    height: 300px;
+    width: 400px;
     overflow: scroll;
     border: solid black 3px;
     margin-top: 50px;
-    margin-left: 20px;
-    margin-right: 50px;
+    margin-left: 70px;
 
 }
 
 #map {
     background-color: lightblue;
-    width: 300px;
+    width: 400px;
     height: 300px;
     padding-right: 30px;
     margin-left: 0px;
@@ -45,62 +45,55 @@ body, html {
 
 #table {
     
-    float: right;
-    margin-right: 500px;
-    margin-top: 90px;
-    padding-bottom: 0px;
     background-color: white;
     border: 2px solid black;
+    width: 400px;
+    margin-left: 70px;
+}
+
+
+.input  {
+    color: rgb(160, 157, 157);
     width: 300px;
+    font-weight: 400;
+    font-size: 90%;
+
 }
 
-th  {
-    width: 120px;
+.button  {
+    background-color: green;
+    width: 75px;
+    height: 35px;
+    border-radius: 10px;
 }
-
-#food    {
-
-    padding-left: 30px;
-    padding-top: 70px;
-}
-
-#zip    {
-
-    height: 150px;
-    width: 300px;
-
-} 
 
 th  {
     font-weight: bold;
     text-align: center;
+    width: 120px;
 }
 
-#form-1 {
-    padding-left: 30px;
-}
 
-#form-2 {
-    padding-left: 140px;
-}
 
 .form-text  {
     color: lightgoldenrodyellow;
+    font-size: 110%;
+    font-weight: bold;
+    margin-left: 100px;
+    
 }
 
 #footer  {
-    background-color: rgb(187, 149, 103);;
-    width: 1600px;
-    margin-left: -30px;
+    background-color: rgb(187, 149, 103);
     border: 2px solid white;
     text-align: center;
     font-weight: bold;
     padding-top: 8px;
+    margin-top: 30px;
+    color: white;
+    position: sticky;
 }
 
-#jumbo-1    {
 
-
-}
 
 

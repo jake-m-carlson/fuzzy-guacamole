@@ -1,113 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
 
   <meta charset="utf-8">
   <title>Project</title>
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-    integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet"
+    href="reset.css">
+  <link rel="stylesheet"
+    href="style.css">
+  <link rel="stylesheet"
+    href="animate.css">
+  <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+    crossorigin="anonymous">
 
 </head>
 
 <body>
-  <div class="jumbotron jumbotron-fluid" id="jumbotron">
-    <div class="container" id="jumbo-1">
-      <h1 class="display-4">
-        PROJECT NUTRITION</h1>
-      <p class="lead">Find
-        information about what
-        you are ingesting.
-      </p>
-      <hr class="my-4">
+  <div class="container-fluid"
+    id="main-container">
+    <div
+      class="jumbotron jumbotron-fluid"
+      id="jumbotron">
+      <div class="container"
+        id="jumbo-1">
+        <h1
+          class="display-4 animated fadeInRight">
+          PROJECT NUTRITION
+        </h1>
+        <p
+          class="lead animated fadeInLeft">
+          Find
+          information about
+          what
+          you are ingesting.
+        </p>
+        <hr class="my-4">
+      </div>
     </div>
-  </div>
 
+    <div class="row">
+      <div class="col-sm-4">
+        <div id="table">
+          <table
+            class="table table-bordered"
+            id="doginformation">
+            <thead>
+              <tr>
+                <th
+                  scope="col">
+                  Calories
+                </th>
+                <td></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th
+                  scope="col">
+                  Fat (g)
+                </th>
+                <td></td>
+              </tr>
+              <tr>
+                <th
+                  scope="col">
+                  Protein (g)
+                </th>
+                <td></td>
+              </tr>
+              <tr>
+                <th
+                  scope="col">
+                  Sodium (mg)
+                </th>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
 
-  <div id="table">
-    <table class="table table-bordered" id="doginformation">
-      <thead>
-        <tr>
-          <th scope="col">Calories
-          </th>
-          <td></td>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="col">Fat (g)
-          </th>
-          <td></td>
-        </tr>
-        <tr>
-          <th scope="col">Protein (g)
-          </th>
-          <td></td>
-        </tr>
-        <tr>
-          <th scope="col">Sodium (mg)</th>
-          <td></td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  <div id="form-1">
-    <form id="food">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 mb-3">
-            <label for="validationCustom05" class="form-text">Food
-              Type</label>
-            <input type="text" class="form-control" id="validationCustom05" placeholder="Food" required>
+      <div class="col-sm-4">
+        <form
+          class="form-text">
+          Food Type<br>
+          <input type="text"
+            name="foodtype"
+            value="Food"
+            class="input"><br><br>
+          Find Your Food Type
+          Near You!<br>
+          <input type="text"
+            name="zipcode"
+            value="Please provide a valid zip code"
+            class="input"><br><br>
+          <input type="submit"
+            value="Submit"
+            class="button animated bounceInUp">
+        </form>
+      </div>
+    </div>
 
-            <br>
-            <button type="button" class="btn btn-success">Submit</button>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="container"
+          id="map-container">
+          <div class=row>
+            <div
+              class="col-med-12"
+              id="map">
+
+            </div>
           </div>
         </div>
-
-    </form>
-  </div>
-  <div id="form-2">
-    <form id="zip">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 mb-3">
-            <label for="validationCustom05" class="form-text">Zip Code</label>
-            <input type="text" class="form-control" id="pac-input"
-              placeholder="Please provide a valid zip code" required>
-
-            <br>
-            <button type="button" class="btn btn-success">Submit</button>
-          </div>
-        </div>
-    </form>
-  </div>
-
+      </div>
 
   <div class=container id="map-container">
     <div class=row>
       <div class="col-med-12" id="map">
 
+      <br>
+      <br>
+      <br>
+    </div>
+    <div class=container-fluid
+      id="footer">
+      <div class=row>
+        <div
+          class="col-med-12"
+          id="foot">
+          <footer>
+            <p>Posted by: </p>
+            <p>Contact
+              information: <a
+                href="mailto:someone@example.com">
+                someone@example.com</a>.
+            </p>
+          </footer>
+        </div>
       </div>
     </div>
   </div>
-  </div>
-  <br>
-  <br>
-  <br>
-  <div class=container id="footer">
-    <div class=row>
-      <div class="col-med-12" id="foot">
-        <footer>
-          <p>Posted by: </p>
-          <p>Contact information: <a href="mailto:someone@example.com">
-              someone@example.com</a>.</p>
-        </footer>
-      </div>
-    </div>
-  </div>
+  
 
 
 
