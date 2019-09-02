@@ -5,33 +5,22 @@
 
   <meta charset="utf-8">
   <title>Project</title>
-  <link rel="stylesheet"
-    href="reset.css">
-  <link rel="stylesheet"
-    href="style.css">
-  <link rel="stylesheet"
-    href="animate.css">
-  <link rel="stylesheet"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-    integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
-    crossorigin="anonymous">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="animate.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
 </head>
 
 <body>
-  <div class="container-fluid"
-    id="main-container">
-    <div
-      class="jumbotron jumbotron-fluid"
-      id="jumbotron">
-      <div class="container"
-        id="jumbo-1">
-        <h1
-          class="display-4 animated fadeInRight">
+  <div class="container-fluid" id="main-container">
+    <div class="jumbotron jumbotron-fluid" id="jumbotron">
+      <div class="container" id="jumbo-1">
+        <h1 class="display-4 animated fadeInRight">
           PROJECT NUTRITION
         </h1>
-        <p
-          class="lead animated fadeInLeft">
+        <p class="lead animated fadeInLeft">
           Find
           information about
           what
@@ -44,13 +33,10 @@
     <div class="row">
       <div class="col-sm-4">
         <div id="table">
-          <table
-            class="table table-bordered"
-            id="doginformation">
+          <table class="table table-bordered" id="doginformation">
             <thead>
               <tr>
-                <th
-                  scope="col">
+                <th scope="col">
                   Calories
                 </th>
                 <td></td>
@@ -58,22 +44,19 @@
             </thead>
             <tbody>
               <tr>
-                <th
-                  scope="col">
+                <th scope="col">
                   Fat (g)
                 </th>
                 <td></td>
               </tr>
               <tr>
-                <th
-                  scope="col">
+                <th scope="col">
                   Protein (g)
                 </th>
                 <td></td>
               </tr>
               <tr>
-                <th
-                  scope="col">
+                <th scope="col">
                   Sodium (mg)
                 </th>
                 <td></td>
@@ -84,34 +67,19 @@
       </div>
 
       <div class="col-sm-4">
-        <form
-          class="form-text">
+        <form class="form-text">
           Food Type<br>
-          <input type="text"
-            name="foodtype"
-            value="Food"
-            class="input"><br><br>
-          Find Your Food Type
-          Near You!<br>
-          <input type="text"
-            name="zipcode"
-            value="Please provide a valid zip code"
-            class="input"><br><br>
-          <input type="submit"
-            value="Submit"
-            class="button animated bounceInUp">
+          <input type="text" name="foodtype" value="Food" class="input" id="foodInput"><br><br>
+          <input type="submit" value="Submit" class="button animated bounceInUp" id="foodItemButton">
         </form>
       </div>
     </div>
 
     <div class="row">
       <div class="col-sm-12">
-        <div class="container"
-          id="map-container">
+        <div class="container" id="article-container">
           <div class=row>
-            <div
-              class="col-med-12"
-              id="map">
+            <div class="col-med-12" id="article">
 
             </div>
           </div>
@@ -123,17 +91,13 @@
       <br>
       <br>
     </div>
-    <div class=container-fluid
-      id="footer">
+    <div class=container-fluid id="footer">
       <div class=row>
-        <div
-          class="col-med-12"
-          id="foot">
+        <div class="col-med-12" id="foot">
           <footer>
             <p>Posted by: </p>
             <p>Contact
-              information: <a
-                href="mailto:someone@example.com">
+              information: <a href="mailto:someone@example.com">
                 someone@example.com</a>.
             </p>
           </footer>
@@ -141,18 +105,13 @@
       </div>
     </div>
   </div>
-  
 
-  <script
-    src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
-  <script
-    src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
-  <script
-    type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script
-    type="text/javascript"
-    src="app.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+
 
 
 </body>
