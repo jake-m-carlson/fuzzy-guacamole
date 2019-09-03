@@ -45,6 +45,44 @@ $.ajax(settings).done(function (response) {
 	});
 });
 
+// Constructing a queryURL using the food ingredient 
+var queryUrl = "https://api.giphy.com/v1/gifs/search?q=" +
+	ingredientSearch + "&api_key=ePu4sAeJ3pnzZxSW4crhvYCK0zZwNzug&limit=10";
+
+// Ajax request with queryURL
+$.ajax({
+	url: queryUrl,
+	method: "GET"
+})
+
+// When data is returned from the request 
+.then(function(response) { 
+	console.log(queryUrl);
+
+	console.log(response);
+
+	// storing data from AJAX request in results variable
+	var results = response.data;
+
+	// Looping through each result item
+	for (var i = 0; i < results.length; i++) {
+
+		// creating and storing a div tag
+		var foodDiv = $("<div>");
+
+		// create and store an image tag
+		var foodImage = $("<img>");
+
+		// set the src attribute of the image to a property pulled off the result item
+		foodImage.attr("src", results[i].images.fixed_height.url);
+
+		// appending the image tag to the foodDiv
+		foodDiv.append(foodImage);
+
+		// prepending the foodDiv to the html page in the "#images" div
+		$("#images").prepend(foodDiv);
+	}
+});
 
 });
 // changed test words
